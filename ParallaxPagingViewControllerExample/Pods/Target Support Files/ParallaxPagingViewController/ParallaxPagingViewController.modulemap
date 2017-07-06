@@ -1,0 +1,6 @@
+framework module ParallaxPagingViewController {
+  umbrella header "ParallaxPagingViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

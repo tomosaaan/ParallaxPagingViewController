@@ -20,15 +20,7 @@ enum PagePosition {
     case before
 }
 
-enum ParallaxPagingViewOption {
+public enum ParallaxPagingViewOption: String {
     case pageSpace
     case parallaxSpace
-    
-    func cgfloatValue(_ value: Any) -> CGFloat{
-        if let number = value as? NSNumber {
-            return CGFloat(number.floatValue)
-        }
-        return 0.0
-    }
-    
 }

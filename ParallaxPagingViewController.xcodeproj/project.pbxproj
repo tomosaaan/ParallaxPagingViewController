@@ -11,19 +11,46 @@
 		55247F7F1F0CDCCF007C2D33 /* ParallaxPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247F7E1F0CDCCF007C2D33 /* ParallaxPagingViewController.swift */; };
 		55247F811F0CDD0B007C2D33 /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247F801F0CDD0B007C2D33 /* ParallaxViewController.swift */; };
 		55247F831F0CE279007C2D33 /* ParallaxPagingViewControllerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247F821F0CE279007C2D33 /* ParallaxPagingViewControllerEnums.swift */; };
-		55247F851F0CE56D007C2D33 /* ParallaxPagingViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247F841F0CE56D007C2D33 /* ParallaxPagingViewController+.swift */; };
 		55247F8B1F0E3273007C2D33 /* ParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247F8A1F0E3273007C2D33 /* ParallaxView.swift */; };
+		55247FFA1F0E7965007C2D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FF91F0E7965007C2D33 /* AppDelegate.swift */; };
+		55247FFC1F0E7965007C2D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FFB1F0E7965007C2D33 /* ViewController.swift */; };
+		55247FFF1F0E7965007C2D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55247FFD1F0E7965007C2D33 /* Main.storyboard */; };
+		552480011F0E7965007C2D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552480001F0E7965007C2D33 /* Assets.xcassets */; };
+		552480041F0E7965007C2D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552480021F0E7965007C2D33 /* LaunchScreen.storyboard */; };
+		5524800A1F0E7981007C2D33 /* ParallaxChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552480091F0E7981007C2D33 /* ParallaxChildViewController.swift */; };
+		5524800B1F0E7DF6007C2D33 /* ParallaxPagingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */; };
+		5524800D1F0E9537007C2D33 /* ParallaxPagingViewController.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5524800C1F0E952E007C2D33 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5524800D1F0E9537007C2D33 /* ParallaxPagingViewController.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxPagingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55247F471F0CDA66007C2D33 /* ParallaxPagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParallaxPagingViewController.h; path = Sources/ParallaxPagingViewController.h; sourceTree = SOURCE_ROOT; };
-		55247F481F0CDA66007C2D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Suportingfile/Info.plist; sourceTree = SOURCE_ROOT; };
+		55247F471F0CDA66007C2D33 /* ParallaxPagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParallaxPagingViewController.h; path = ParallaxPagingViewController/Sources/ParallaxPagingViewController.h; sourceTree = SOURCE_ROOT; };
+		55247F481F0CDA66007C2D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ParallaxPagingViewController/Sources/Suportingfile/Info.plist; sourceTree = SOURCE_ROOT; };
 		55247F7E1F0CDCCF007C2D33 /* ParallaxPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxPagingViewController.swift; sourceTree = "<group>"; };
 		55247F801F0CDD0B007C2D33 /* ParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
 		55247F821F0CE279007C2D33 /* ParallaxPagingViewControllerEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxPagingViewControllerEnums.swift; sourceTree = "<group>"; };
-		55247F841F0CE56D007C2D33 /* ParallaxPagingViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ParallaxPagingViewController+.swift"; sourceTree = "<group>"; };
 		55247F8A1F0E3273007C2D33 /* ParallaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxView.swift; sourceTree = "<group>"; };
+		55247FF71F0E7965007C2D33 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55247FF91F0E7965007C2D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55247FFB1F0E7965007C2D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55247FFE1F0E7965007C2D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		552480001F0E7965007C2D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		552480031F0E7965007C2D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		552480051F0E7965007C2D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552480091F0E7981007C2D33 /* ParallaxChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55247FF41F0E7965007C2D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5524800B1F0E7DF6007C2D33 /* ParallaxPagingViewController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				55247F7C1F0CDBC6007C2D33 /* Sources */,
+				55247FF81F0E7965007C2D33 /* Example */,
 				55247F451F0CDA66007C2D33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */,
+				55247FF71F0E7965007C2D33 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,23 +94,37 @@
 			isa = PBXGroup;
 			children = (
 				55247F7D1F0CDC9D007C2D33 /* Suportingfile */,
-				55247F481F0CDA66007C2D33 /* Info.plist */,
 				55247F471F0CDA66007C2D33 /* ParallaxPagingViewController.h */,
 				55247F7E1F0CDCCF007C2D33 /* ParallaxPagingViewController.swift */,
-				55247F841F0CE56D007C2D33 /* ParallaxPagingViewController+.swift */,
 				55247F8A1F0E3273007C2D33 /* ParallaxView.swift */,
 				55247F821F0CE279007C2D33 /* ParallaxPagingViewControllerEnums.swift */,
 				55247F801F0CDD0B007C2D33 /* ParallaxViewController.swift */,
 			);
-			path = Sources;
+			name = Sources;
+			path = ParallaxPagingViewController/Sources;
 			sourceTree = "<group>";
 		};
 		55247F7D1F0CDC9D007C2D33 /* Suportingfile */ = {
 			isa = PBXGroup;
 			children = (
+				55247F481F0CDA66007C2D33 /* Info.plist */,
 			);
 			name = Suportingfile;
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		55247FF81F0E7965007C2D33 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				55247FF91F0E7965007C2D33 /* AppDelegate.swift */,
+				55247FFB1F0E7965007C2D33 /* ViewController.swift */,
+				552480091F0E7981007C2D33 /* ParallaxChildViewController.swift */,
+				55247FFD1F0E7965007C2D33 /* Main.storyboard */,
+				552480001F0E7965007C2D33 /* Assets.xcassets */,
+				552480021F0E7965007C2D33 /* LaunchScreen.storyboard */,
+				552480051F0E7965007C2D33 /* Info.plist */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +159,24 @@
 			productReference = 55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		55247FF61F0E7965007C2D33 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552480061F0E7965007C2D33 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				55247FF31F0E7965007C2D33 /* Sources */,
+				55247FF41F0E7965007C2D33 /* Frameworks */,
+				55247FF51F0E7965007C2D33 /* Resources */,
+				5524800C1F0E952E007C2D33 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 55247FF71F0E7965007C2D33 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +190,11 @@
 					55247F431F0CDA66007C2D33 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					55247FF61F0E7965007C2D33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KYVZ4HHZ5P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				55247F431F0CDA66007C2D33 /* ParallaxPagingViewController */,
+				55247FF61F0E7965007C2D33 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +223,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55247FF51F0E7965007C2D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552480041F0E7965007C2D33 /* LaunchScreen.storyboard in Resources */,
+				552480011F0E7965007C2D33 /* Assets.xcassets in Resources */,
+				55247FFF1F0E7965007C2D33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,11 +247,39 @@
 				55247F8B1F0E3273007C2D33 /* ParallaxView.swift in Sources */,
 				55247F831F0CE279007C2D33 /* ParallaxPagingViewControllerEnums.swift in Sources */,
 				55247F811F0CDD0B007C2D33 /* ParallaxViewController.swift in Sources */,
-				55247F851F0CE56D007C2D33 /* ParallaxPagingViewController+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55247FF31F0E7965007C2D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55247FFC1F0E7965007C2D33 /* ViewController.swift in Sources */,
+				55247FFA1F0E7965007C2D33 /* AppDelegate.swift in Sources */,
+				5524800A1F0E7981007C2D33 /* ParallaxChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55247FFD1F0E7965007C2D33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55247FFE1F0E7965007C2D33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		552480021F0E7965007C2D33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552480031F0E7965007C2D33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		55247F4A1F0CDA66007C2D33 /* Debug */ = {
@@ -277,7 +390,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/ParallaxPagingViewController/Suportingfile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ParallaxPagingViewController/Sources/Suportingfile/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -298,13 +411,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/ParallaxPagingViewController/Suportingfile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ParallaxPagingViewController/Sources/Suportingfile/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.ParallaxPagingViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		552480071F0E7965007C2D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KYVZ4HHZ5P;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		552480081F0E7965007C2D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KYVZ4HHZ5P;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -329,6 +470,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		552480061F0E7965007C2D33 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552480071F0E7965007C2D33 /* Debug */,
+				552480081F0E7965007C2D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

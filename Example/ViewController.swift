@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ParallaxPagingViewControllerExample
+//  Example
 //
 //  Created by takahashi tomoki on 2017/07/06.
 //  Copyright © 2017年 TomokiTakahashi. All rights reserved.

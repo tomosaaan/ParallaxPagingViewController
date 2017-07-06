@@ -10,23 +10,23 @@ import UIKit
 
 
 @IBDesignable
-class ParallaxView: UIView {
+open class ParallaxView: UIView {
 
-    let backgroundImageView = UIImageView()
+    public let backgroundImageView = UIImageView()
     
     @IBInspectable
-    var backgroundImage: UIImage? {
+    public var backgroundImage: UIImage? {
         willSet {
             backgroundImageView.image = newValue
         }
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         initiarize()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initiarize()
     }
@@ -39,7 +39,7 @@ class ParallaxView: UIView {
         addSubview(backgroundImageView)
     }
     
-    func parallaxAnimate(_ space: CGFloat, rate: CGFloat, position: PagePosition) {
+    internal func parallaxAnimate(_ space: CGFloat, rate: CGFloat, position: PagePosition) {
         let originX: CGFloat
         switch position {
         case .after:

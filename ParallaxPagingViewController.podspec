@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name         = "ParallaxPagingViewController"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.homepage     = "https://github.com/tomokitakahashi/ParallaxPagingViewController"
   s.summary      = "ParallaxPagingViewController is paging library with parallax animation"
   s.license      = "MIT"
   s.author       = { "Tomoki Takahashi" => "tom_aaa_0905@yahoo.co.jp" }
   s.source       = { :git => "https://github.com/tomokitakahashi/ParallaxPagingViewController.git", :tag => s.version.to_s }
   s.platform     = :ios, '8.0'
-  s.source_files = 'ParallaxPagingViewController/Sources/*.{h,swift}'
+  s.source_files = 'ParallaxPagingViewController/Sources/*.{swift}'
   s.requires_arc = true
   s.frameworks = "UIKit"
 end

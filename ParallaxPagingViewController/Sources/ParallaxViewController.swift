@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ParallaxViewController: UIViewController {
+open class ParallaxViewController: UIViewController {
     
-    fileprivate(set) var backgroundView: ParallaxView! {
+    internal var backgroundView: ParallaxView! {
         get {
             if let backView = view as? ParallaxView {
                 return backView
@@ -18,19 +18,22 @@ class ParallaxViewController: UIViewController {
             return nil
         }
         set {
-            if !(view is ParallaxView) {
-                view = newValue
-            }
+            view = newValue
         }
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupBackgroundView()
     }
 
     fileprivate func setupBackgroundView() {
-        backgroundView = ParallaxView()
+        let parallaxView = ParallaxView()
+        parallaxView.frame = view.bounds
+        backgroundView = parallaxView
     }
 
+    public func setParallaxImage(_ image: UIImage?) {
+        backgroundView.backgroundImage = image
+    }
 }

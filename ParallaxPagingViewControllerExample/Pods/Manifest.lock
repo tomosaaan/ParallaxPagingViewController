@@ -1,5 +1,5 @@
 PODS:
-  - ParallaxPagingViewController (0.0.1)
+  - ParallaxPagingViewController (0.0.2)
 
 DEPENDENCIES:
   - ParallaxPagingViewController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ParallaxPagingViewController: 3a11030230f44e57382b3420396952227b787f60
+  ParallaxPagingViewController: cac427438490f584cbc4793b371a141f5b4eebee
 
 PODFILE CHECKSUM: d873514212c463d0bd5ee10096fde31d8a79955a
 

@@ -7,47 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0559B00DC7FD918961A5B382AFC3CAB0 /* Pods-ParallaxPagingViewControllerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E612655E3707BEC3D3CA12F87F3874B0 /* Pods-ParallaxPagingViewControllerExample-dummy.m */; };
-		2885BC930F2A9980F8D8E15571A88F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2A6EFA48C4E301242FBA3295DB5ECCBC /* Pods-ParallaxPagingViewControllerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0648CC1B0879CE15592E6450BA2B3229 /* Pods-ParallaxPagingViewControllerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4CCA5C8DE6E4DBD5B490A34170AF166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0C9CE78DEF6C5904ED25511AF3C93466 /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F44C301CE37D255DCE900B49F9CEE4B /* ParallaxViewController.swift */; };
+		18D09B6A97F4CB3852472FA75BFDF37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1C56CE917D2BC329C18AEA3ECFE2EE55 /* Pods-ParallaxPagingViewControllerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0648CC1B0879CE15592E6450BA2B3229 /* Pods-ParallaxPagingViewControllerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2885BC930F2A9980F8D8E15571A88F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		38EE4439D8CC3B74386D249858BB32A5 /* ParallaxPagingViewControllerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC30C7DE235C0907F2D37F16FADBAC /* ParallaxPagingViewControllerEnums.swift */; };
+		4DFBA366BFC4232BFE44BAA9366010D8 /* ParallaxPagingViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40392265D912A45676307DAF9DAE5C /* ParallaxPagingViewController+.swift */; };
+		645369920F52A67508BA80B8DDDEC2A3 /* ParallaxPagingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B03493EED8FFE26A60C123CB32070D /* ParallaxPagingViewController-dummy.m */; };
+		6E0DE7F6A841B31A3C2815C961830163 /* ParallaxPagingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7879056CD5EA6350286454A0015021FD /* ParallaxPagingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A90B16F49DD42A9C6043D5933CC7E533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		B25CF955CB44EFF58C145FC10B0DA678 /* Pods-ParallaxPagingViewControllerExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CBCD8A15D27EF4E52B13D7636F48F7 /* Pods-ParallaxPagingViewControllerExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93E22A5DFD3C38128B2EF6431BF81EE /* ParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27146D1D41921D08C5C9B714AF7518 /* ParallaxView.swift */; };
+		CC1418B3F0BAC9D6D8AA5C259EB61AF6 /* Pods-ParallaxPagingViewControllerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E612655E3707BEC3D3CA12F87F3874B0 /* Pods-ParallaxPagingViewControllerExample-dummy.m */; };
 		D217E8E2A09980BC5EADA2E1DE2FDF5A /* Pods-ParallaxPagingViewControllerExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828170322AF3419D1735EA3DDEA52F5 /* Pods-ParallaxPagingViewControllerExampleUITests-dummy.m */; };
+		E1A8603340E0603E8C96E43547F98D6C /* ParallaxPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE461DECB5C246235721DB027B37BA4C /* ParallaxPagingViewController.swift */; };
+		FDD0C085949A69DEBC1AC433F24D4655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		86BC2650B034A1B78225435EC39A1D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8EE4DA55F1A8F329011F0C7ABB9052E;
+			remoteInfo = ParallaxPagingViewController;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		02B03493EED8FFE26A60C123CB32070D /* ParallaxPagingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ParallaxPagingViewController-dummy.m"; sourceTree = "<group>"; };
 		0648CC1B0879CE15592E6450BA2B3229 /* Pods-ParallaxPagingViewControllerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParallaxPagingViewControllerExample-umbrella.h"; sourceTree = "<group>"; };
 		176B37A26CCBBF96A3F3FB765CCEBBDB /* Pods-ParallaxPagingViewControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxPagingViewControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		1828170322AF3419D1735EA3DDEA52F5 /* Pods-ParallaxPagingViewControllerExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParallaxPagingViewControllerExampleUITests-dummy.m"; sourceTree = "<group>"; };
+		22C2790EEDD0F1EAAFEB2F6823A2CE18 /* ParallaxPagingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParallaxPagingViewController-prefix.pch"; sourceTree = "<group>"; };
+		284790FABDD78DD98FB53158A32B4C2E /* ParallaxPagingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ParallaxPagingViewController.xcconfig; sourceTree = "<group>"; };
 		3B29D7DFC52FE35055CB70B19FFD9D61 /* Pods-ParallaxPagingViewControllerExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxPagingViewControllerExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		56DAC03EC9C893BAA151F1378EE2990F /* Pods_ParallaxPagingViewControllerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxPagingViewControllerExampleUITests.framework; path = "Pods-ParallaxPagingViewControllerExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D27146D1D41921D08C5C9B714AF7518 /* ParallaxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxView.swift; sourceTree = "<group>"; };
+		53DCBA5C4C077ABE62F18FBBACB54D03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E980894EE7BCE88CD9C24811CF2E72 /* Pods-ParallaxPagingViewControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxPagingViewControllerExample.release.xcconfig"; sourceTree = "<group>"; };
+		7879056CD5EA6350286454A0015021FD /* ParallaxPagingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParallaxPagingViewController-umbrella.h"; sourceTree = "<group>"; };
 		7B87AB0A56E0DC3DC792B449AB6FDEC7 /* Pods-ParallaxPagingViewControllerExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxPagingViewControllerExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		7C41392648AE8F755FE2F72C2526568B /* Pods-ParallaxPagingViewControllerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxPagingViewControllerExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F44C301CE37D255DCE900B49F9CEE4B /* ParallaxViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
+		8699EDCAABEB86DC376860CF8B548556 /* Pods_ParallaxPagingViewControllerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxPagingViewControllerExampleUITests.framework; path = "Pods-ParallaxPagingViewControllerExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC27831B23A249976026E0C775B2F32 /* Pods-ParallaxPagingViewControllerExampleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxPagingViewControllerExampleUITests-resources.sh"; sourceTree = "<group>"; };
 		8F2E7CB2BC5C9FE4EE103ACD061D0937 /* Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		90DE8FADDABEB8DE68B73B0AB6F44082 /* Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9578B1DB218DD41D71741957888161A5 /* ParallaxPagingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ParallaxPagingViewController.framework; path = ParallaxPagingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C40392265D912A45676307DAF9DAE5C /* ParallaxPagingViewController+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ParallaxPagingViewController+.swift"; sourceTree = "<group>"; };
+		A121CE6DCF6C920FE6BC48418992FFB7 /* ParallaxPagingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ParallaxPagingViewController.modulemap; sourceTree = "<group>"; };
 		A77B0FD91C2571A3192003E686BC0739 /* Pods-ParallaxPagingViewControllerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxPagingViewControllerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AA64D6D145E949853F2C33E02D526C22 /* Pods_ParallaxPagingViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxPagingViewControllerExample.framework; path = "Pods-ParallaxPagingViewControllerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B949828D128253C7E5F347262FBF3C83 /* Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF33739061732ECF7239F754314DC5C6 /* Pods-ParallaxPagingViewControllerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParallaxPagingViewControllerExample.modulemap"; sourceTree = "<group>"; };
 		C2B317D3A25A48B728E1CB7BC11F668A /* Pods-ParallaxPagingViewControllerExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParallaxPagingViewControllerExampleUITests.modulemap"; sourceTree = "<group>"; };
 		C4CBCD8A15D27EF4E52B13D7636F48F7 /* Pods-ParallaxPagingViewControllerExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParallaxPagingViewControllerExampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		C96C0A2D42E0F03E1A4CDC3952898A5A /* Pods_ParallaxPagingViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxPagingViewControllerExample.framework; path = "Pods-ParallaxPagingViewControllerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE5A83C2CA741D56D02A0573173E78C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DC30C7DE235C0907F2D37F16FADBAC /* ParallaxPagingViewControllerEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxPagingViewControllerEnums.swift; sourceTree = "<group>"; };
 		E612655E3707BEC3D3CA12F87F3874B0 /* Pods-ParallaxPagingViewControllerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParallaxPagingViewControllerExample-dummy.m"; sourceTree = "<group>"; };
 		EE6C3EC8F4FBE118B9A7EE83931D5003 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB1B36133DA678A00CF3D49DFA41EC00 /* Pods-ParallaxPagingViewControllerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxPagingViewControllerExample-frameworks.sh"; sourceTree = "<group>"; };
+		FE461DECB5C246235721DB027B37BA4C /* ParallaxPagingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxPagingViewController.swift; sourceTree = "<group>"; };
 		FF4CAFFB1B03A25EC2F9CBD56D76B459 /* Pods-ParallaxPagingViewControllerExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxPagingViewControllerExample-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C15FF92594C31ABD2871EDA38EF1091 /* Frameworks */ = {
+		07A6790BA1A12A2E6194A0153B74BB8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CCA5C8DE6E4DBD5B490A34170AF166 /* Foundation.framework in Frameworks */,
+				18D09B6A97F4CB3852472FA75BFDF37C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +91,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC353B0B4C80465EA0DD97315569EAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90B16F49DD42A9C6043D5933CC7E533 /* Foundation.framework in Frameworks */,
+				FDD0C085949A69DEBC1AC433F24D4655 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30DFFB45C767038E8DB87598F40D7C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9578B1DB218DD41D71741957888161A5 /* ParallaxPagingViewController.framework */,
+				C96C0A2D42E0F03E1A4CDC3952898A5A /* Pods_ParallaxPagingViewControllerExample.framework */,
+				8699EDCAABEB86DC376860CF8B548556 /* Pods_ParallaxPagingViewControllerExampleUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328CA68BD349271CF038128521142263 /* ParallaxPagingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35405F91E30D589D67E085A7844906A3 /* ParallaxPagingViewController */,
+				AA5AD453BA9394E572F5C9502E312687 /* Support Files */,
+			);
+			name = ParallaxPagingViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		35405F91E30D589D67E085A7844906A3 /* ParallaxPagingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9735AB6CE95E51202957A52E7E22A21C /* Sources */,
+			);
+			name = ParallaxPagingViewController;
+			path = ParallaxPagingViewController;
+			sourceTree = "<group>";
+		};
 		35C43567D092C03719AB1EA68B8BD0E3 /* Pods-ParallaxPagingViewControllerExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,56 +150,67 @@
 			path = "Target Support Files/Pods-ParallaxPagingViewControllerExampleUITests";
 			sourceTree = "<group>";
 		};
-		69E08284D322120AE3CA150082CEDAEC /* ParallaxPagingViewController */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
-			name = ParallaxPagingViewController;
-			path = ../..;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				CE502FE7DD33BC7BF16540649260037B /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DE452CF5F01308A728BCFC5B287AD33F /* Products */,
+				E0C302C728FE39261DF859A409CA5E2B /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				30DFFB45C767038E8DB87598F40D7C0B /* Products */,
 				E5D11B6EAD3BC5710FFD89696E39B026 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		9735AB6CE95E51202957A52E7E22A21C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				FE461DECB5C246235721DB027B37BA4C /* ParallaxPagingViewController.swift */,
+				9C40392265D912A45676307DAF9DAE5C /* ParallaxPagingViewController+.swift */,
+				E5DC30C7DE235C0907F2D37F16FADBAC /* ParallaxPagingViewControllerEnums.swift */,
+				3D27146D1D41921D08C5C9B714AF7518 /* ParallaxView.swift */,
+				7F44C301CE37D255DCE900B49F9CEE4B /* ParallaxViewController.swift */,
 			);
-			name = Frameworks;
+			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		CE502FE7DD33BC7BF16540649260037B /* Development Pods */ = {
+		AA5AD453BA9394E572F5C9502E312687 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				69E08284D322120AE3CA150082CEDAEC /* ParallaxPagingViewController */,
+				53DCBA5C4C077ABE62F18FBBACB54D03 /* Info.plist */,
+				A121CE6DCF6C920FE6BC48418992FFB7 /* ParallaxPagingViewController.modulemap */,
+				284790FABDD78DD98FB53158A32B4C2E /* ParallaxPagingViewController.xcconfig */,
+				02B03493EED8FFE26A60C123CB32070D /* ParallaxPagingViewController-dummy.m */,
+				22C2790EEDD0F1EAAFEB2F6823A2CE18 /* ParallaxPagingViewController-prefix.pch */,
+				7879056CD5EA6350286454A0015021FD /* ParallaxPagingViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "ParallaxPagingViewControllerExample/Pods/Target Support Files/ParallaxPagingViewController";
+			sourceTree = "<group>";
+		};
+		E0C302C728FE39261DF859A409CA5E2B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				328CA68BD349271CF038128521142263 /* ParallaxPagingViewController */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DE452CF5F01308A728BCFC5B287AD33F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA64D6D145E949853F2C33E02D526C22 /* Pods_ParallaxPagingViewControllerExample.framework */,
-				56DAC03EC9C893BAA151F1378EE2990F /* Pods_ParallaxPagingViewControllerExampleUITests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E5D11B6EAD3BC5710FFD89696E39B026 /* Targets Support Files */ = {
@@ -162,6 +243,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		381C3D772EFD7C76C2759DB09B9F09CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C56CE917D2BC329C18AEA3ECFE2EE55 /* Pods-ParallaxPagingViewControllerExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		386720C2AF7BC4454349CA79D350E8AB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,11 +259,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF70B64026F7BFD7DC2203AD2F65A375 /* Headers */ = {
+		EBBFEBD7A90C0E03001379F32B3CD912 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A6EFA48C4E301242FBA3295DB5ECCBC /* Pods-ParallaxPagingViewControllerExample-umbrella.h in Headers */,
+				6E0DE7F6A841B31A3C2815C961830163 /* ParallaxPagingViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,24 +284,42 @@
 			);
 			name = "Pods-ParallaxPagingViewControllerExampleUITests";
 			productName = "Pods-ParallaxPagingViewControllerExampleUITests";
-			productReference = 56DAC03EC9C893BAA151F1378EE2990F /* Pods_ParallaxPagingViewControllerExampleUITests.framework */;
+			productReference = 8699EDCAABEB86DC376860CF8B548556 /* Pods_ParallaxPagingViewControllerExampleUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7843FE1874148395A7D8887E7C5492F /* Pods-ParallaxPagingViewControllerExample */ = {
+		38AB16C40E66F7BFDAAA6EAADBF3C737 /* Pods-ParallaxPagingViewControllerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD4FB1577E663F0BC32C059B96884225 /* Build configuration list for PBXNativeTarget "Pods-ParallaxPagingViewControllerExample" */;
+			buildConfigurationList = 3E25C7F70FC96FC379EEA2BFD6080409 /* Build configuration list for PBXNativeTarget "Pods-ParallaxPagingViewControllerExample" */;
 			buildPhases = (
-				6E5356F7736A12A1CFF8437469C0D196 /* Sources */,
-				4C15FF92594C31ABD2871EDA38EF1091 /* Frameworks */,
-				EF70B64026F7BFD7DC2203AD2F65A375 /* Headers */,
+				691DE69B3758066B79D7B0C6C14359B2 /* Sources */,
+				07A6790BA1A12A2E6194A0153B74BB8D /* Frameworks */,
+				381C3D772EFD7C76C2759DB09B9F09CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				131E332C81B961CA0D07A2D796DB7062 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParallaxPagingViewControllerExample";
+			productName = "Pods-ParallaxPagingViewControllerExample";
+			productReference = C96C0A2D42E0F03E1A4CDC3952898A5A /* Pods_ParallaxPagingViewControllerExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8EE4DA55F1A8F329011F0C7ABB9052E /* ParallaxPagingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15476F364168DEB74A9E3E01CC0C141 /* Build configuration list for PBXNativeTarget "ParallaxPagingViewController" */;
+			buildPhases = (
+				C1FAFF56579790372CE38A55BA399B52 /* Sources */,
+				EC353B0B4C80465EA0DD97315569EAC0 /* Frameworks */,
+				EBBFEBD7A90C0E03001379F32B3CD912 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ParallaxPagingViewControllerExample";
-			productName = "Pods-ParallaxPagingViewControllerExample";
-			productReference = AA64D6D145E949853F2C33E02D526C22 /* Pods_ParallaxPagingViewControllerExample.framework */;
+			name = ParallaxPagingViewController;
+			productName = ParallaxPagingViewController;
+			productReference = 9578B1DB218DD41D71741957888161A5 /* ParallaxPagingViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -232,22 +339,36 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DE452CF5F01308A728BCFC5B287AD33F /* Products */;
+			productRefGroup = 30DFFB45C767038E8DB87598F40D7C0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7843FE1874148395A7D8887E7C5492F /* Pods-ParallaxPagingViewControllerExample */,
+				A8EE4DA55F1A8F329011F0C7ABB9052E /* ParallaxPagingViewController */,
+				38AB16C40E66F7BFDAAA6EAADBF3C737 /* Pods-ParallaxPagingViewControllerExample */,
 				191FE494452AA6CCA1B5BB1799A5178C /* Pods-ParallaxPagingViewControllerExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E5356F7736A12A1CFF8437469C0D196 /* Sources */ = {
+		691DE69B3758066B79D7B0C6C14359B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0559B00DC7FD918961A5B382AFC3CAB0 /* Pods-ParallaxPagingViewControllerExample-dummy.m in Sources */,
+				CC1418B3F0BAC9D6D8AA5C259EB61AF6 /* Pods-ParallaxPagingViewControllerExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FAFF56579790372CE38A55BA399B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFBA366BFC4232BFE44BAA9366010D8 /* ParallaxPagingViewController+.swift in Sources */,
+				645369920F52A67508BA80B8DDDEC2A3 /* ParallaxPagingViewController-dummy.m in Sources */,
+				E1A8603340E0603E8C96E43547F98D6C /* ParallaxPagingViewController.swift in Sources */,
+				38EE4439D8CC3B74386D249858BB32A5 /* ParallaxPagingViewControllerEnums.swift in Sources */,
+				C93E22A5DFD3C38128B2EF6431BF81EE /* ParallaxView.swift in Sources */,
+				0C9CE78DEF6C5904ED25511AF3C93466 /* ParallaxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +381,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		131E332C81B961CA0D07A2D796DB7062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParallaxPagingViewController;
+			target = A8EE4DA55F1A8F329011F0C7ABB9052E /* ParallaxPagingViewController */;
+			targetProxy = 86BC2650B034A1B78225435EC39A1D1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		08E8768F6E5BB5CFC0126C152B7AB9D6 /* Release */ = {
@@ -342,16 +472,51 @@
 			};
 			name = Release;
 		};
-		4F599A44AE2C5CE754D6EDE7B684977E /* Release */ = {
+		3E5CA217B2BFF6075A14FC84930684C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E980894EE7BCE88CD9C24811CF2E72 /* Pods-ParallaxPagingViewControllerExample.release.xcconfig */;
+			baseConfigurationReference = 284790FABDD78DD98FB53158A32B4C2E /* ParallaxPagingViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ParallaxPagingViewController/ParallaxPagingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ParallaxPagingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ParallaxPagingViewController/ParallaxPagingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ParallaxPagingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56E3D1B4BA7985718A469AC989069BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176B37A26CCBBF96A3F3FB765CCEBBDB /* Pods-ParallaxPagingViewControllerExample.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -364,7 +529,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxPagingViewControllerExample/Pods-ParallaxPagingViewControllerExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -372,11 +537,14 @@
 				PRODUCT_NAME = Pods_ParallaxPagingViewControllerExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		7D02113F3D5D6905D78CE1CC3CBD33BC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -414,41 +582,39 @@
 			};
 			name = Debug;
 		};
-		A4D7CD828CB88F4D90D009982B515324 /* Debug */ = {
+		927302843DBE89391F10A12BABF54FCA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 176B37A26CCBBF96A3F3FB765CCEBBDB /* Pods-ParallaxPagingViewControllerExample.debug.xcconfig */;
+			baseConfigurationReference = 284790FABDD78DD98FB53158A32B4C2E /* ParallaxPagingViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxPagingViewControllerExample/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ParallaxPagingViewController/ParallaxPagingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ParallaxPagingViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxPagingViewControllerExample/Pods-ParallaxPagingViewControllerExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ParallaxPagingViewControllerExample;
+				MODULEMAP_FILE = "Target Support Files/ParallaxPagingViewController/ParallaxPagingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ParallaxPagingViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -498,6 +664,44 @@
 			};
 			name = Debug;
 		};
+		EF08714DF1E6722A7A36AF776FB002E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E980894EE7BCE88CD9C24811CF2E72 /* Pods-ParallaxPagingViewControllerExample.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxPagingViewControllerExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxPagingViewControllerExample/Pods-ParallaxPagingViewControllerExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParallaxPagingViewControllerExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,6 +710,15 @@
 			buildConfigurations = (
 				C104F7F091290C3D1E248192F07FE689 /* Debug */,
 				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E25C7F70FC96FC379EEA2BFD6080409 /* Build configuration list for PBXNativeTarget "Pods-ParallaxPagingViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E3D1B4BA7985718A469AC989069BE6 /* Debug */,
+				EF08714DF1E6722A7A36AF776FB002E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -519,11 +732,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD4FB1577E663F0BC32C059B96884225 /* Build configuration list for PBXNativeTarget "Pods-ParallaxPagingViewControllerExample" */ = {
+		B15476F364168DEB74A9E3E01CC0C141 /* Build configuration list for PBXNativeTarget "ParallaxPagingViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4D7CD828CB88F4D90D009982B515324 /* Debug */,
-				4F599A44AE2C5CE754D6EDE7B684977E /* Release */,
+				3E5CA217B2BFF6075A14FC84930684C3 /* Debug */,
+				927302843DBE89391F10A12BABF54FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
