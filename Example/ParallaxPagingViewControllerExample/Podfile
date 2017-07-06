@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+
+target 'ParallaxPagingViewControllerExample' do
+  use_frameworks!
+
+  pod 'ParallaxPagingViewController', :path => '../../'
+
+  target 'ParallaxPagingViewControllerExampleUITests' do
+    inherit! :search_paths
+  end
+
+end
