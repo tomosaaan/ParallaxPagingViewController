@@ -80,31 +80,23 @@
 			path = "Target Support Files/Pods-ParallaxPagingViewControllerExampleUITests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				933A658DBD905459FD1DEB15B79804E6 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DE452CF5F01308A728BCFC5B287AD33F /* Products */,
-				E5D11B6EAD3BC5710FFD89696E39B026 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		933A658DBD905459FD1DEB15B79804E6 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ADDFA935AB7028B774CEE9DD8877DD04 /* ParallaxPagingViewController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		ADDFA935AB7028B774CEE9DD8877DD04 /* ParallaxPagingViewController */ = {
+		69E08284D322120AE3CA150082CEDAEC /* ParallaxPagingViewController */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = ParallaxPagingViewController;
-			path = ../../..;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CE502FE7DD33BC7BF16540649260037B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DE452CF5F01308A728BCFC5B287AD33F /* Products */,
+				E5D11B6EAD3BC5710FFD89696E39B026 /* Targets Support Files */,
+			);
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -113,6 +105,14 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE502FE7DD33BC7BF16540649260037B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69E08284D322120AE3CA150082CEDAEC /* ParallaxPagingViewController */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {

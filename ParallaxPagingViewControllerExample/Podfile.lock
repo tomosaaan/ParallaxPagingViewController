@@ -1,0 +1,16 @@
+PODS:
+  - ParallaxPagingViewController (0.0.1)
+
+DEPENDENCIES:
+  - ParallaxPagingViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ParallaxPagingViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ParallaxPagingViewController: 3a11030230f44e57382b3420396952227b787f60
+
+PODFILE CHECKSUM: d873514212c463d0bd5ee10096fde31d8a79955a
+
+COCOAPODS: 1.2.1

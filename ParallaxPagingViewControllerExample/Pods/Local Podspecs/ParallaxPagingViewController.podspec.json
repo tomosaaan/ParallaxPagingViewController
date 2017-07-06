@@ -1,7 +1,7 @@
 {
   "name": "ParallaxPagingViewController",
   "version": "0.0.1",
-  "homepage": "https://",
+  "homepage": "https://github.com/tomokitakahashi/ParallaxPagingViewController",
   "summary": "ParallaxPagingViewController is paging library with parallax animation",
   "license": "MIT",
   "authors": {
@@ -14,7 +14,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ParallaxPagingViewController/Sources/*.{h,swift}",
+  "source_files": "Sources/**/*",
   "requires_arc": true,
   "frameworks": "UIKit"
 }
