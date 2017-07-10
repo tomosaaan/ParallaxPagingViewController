@@ -1,0 +1,4 @@
+language: objective-c
+script:
+- xcodebuild test -workspace ParallaxPagingViewControllerExample/ParallaxPagingViewControllerExample.xcworkspace -scheme ParallaxPagingViewControllerExample -sdk iphonesimulator 
+- pod lib lint
