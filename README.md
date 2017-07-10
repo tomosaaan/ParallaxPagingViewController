@@ -2,6 +2,7 @@
 <img src="DocumentContents/top.png" width="700">
 
 [![Build Status](https://travis-ci.org/tomokitakahashi/ParallaxPagingViewController.svg?branch=master)](https://travis-ci.org/tomokitakahashi/ParallaxPagingViewController)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Demo
 <img src="DocumentContents/Demo.gif" width="200">
