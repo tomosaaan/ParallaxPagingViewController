@@ -1,5 +1,5 @@
 language: objective-c
 script:
 - set -o pipefail
-- xcodebuild test -workspace ParallaxPagingViewControllerExample/ParallaxPagingViewControllerExample.xcworkspace -scheme ParallaxPagingViewControllerExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest'
+- xcodebuild test -workspace ParallaxPagingViewControllerExample/ParallaxPagingViewControllerExample.xcworkspace -scheme ParallaxPagingViewControllerExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
 - pod lib lint
