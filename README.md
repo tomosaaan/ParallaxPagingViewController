@@ -29,10 +29,12 @@ class ParallaxChildViewController: ParallaxViewController {
 }
 ```
 
+```swift
+@IBInspectable var parallaxImage: UIImage? // required set image
+```
+
 ### ParallaxPagingViewController
 If you customize pagingViewController, needs extends . 
-
-
 
 - initializer
 
