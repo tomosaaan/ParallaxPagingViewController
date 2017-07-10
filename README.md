@@ -7,7 +7,13 @@
 ## Demo
 <img src="DocumentContents/Demo.gif" width="200">
 
+## Features
+
+- [ ] Add more example and test 
+- [ ] Support Swift4
+
 ## Usage
+
 ### import 
 ```swift
 import ParallaxPagingViewController
