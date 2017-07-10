@@ -1,13 +1,12 @@
 //
 //  ViewController.swift
-//  Example
+//  Test
 //
-//  Created by takahashi tomoki on 2017/07/06.
+//  Created by takahashi tomoki on 2017/07/09.
 //  Copyright © 2017年 TomokiTakahashi. All rights reserved.
 //
 
 import UIKit
-import ParallaxPagingViewController
 
 class ViewController: UIViewController {
 

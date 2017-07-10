@@ -20,7 +20,23 @@
 		5524800A1F0E7981007C2D33 /* ParallaxChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552480091F0E7981007C2D33 /* ParallaxChildViewController.swift */; };
 		5524800B1F0E7DF6007C2D33 /* ParallaxPagingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */; };
 		5524800D1F0E9537007C2D33 /* ParallaxPagingViewController.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55247F441F0CDA66007C2D33 /* ParallaxPagingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5524800F1F0F6440007C2D33 /* ParallaxPagingParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5524800E1F0F6440007C2D33 /* ParallaxPagingParentViewController.swift */; };
+		5567279E1F1153D800307D5E /* ParallaxChildViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5567279D1F1153D800307D5E /* ParallaxChildViewController2.swift */; };
+		558D62B51F0F68BE006BE6C8 /* Demo1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558D62B41F0F68BE006BE6C8 /* Demo1.storyboard */; };
+		55D2F7BD1F116A6500EC282D /* Child3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D2F7BC1F116A6500EC282D /* Child3.storyboard */; };
+		55D2F7BF1F11788400EC282D /* ChildViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D2F7BE1F11788400EC282D /* ChildViewController.storyboard */; };
+		55D2F7C11F11788F00EC282D /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2F7C01F11788F00EC282D /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55ECBB281F117D1D00A0C90D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55247F3B1F0CDA66007C2D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55247F431F0CDA66007C2D33;
+			remoteInfo = ParallaxPagingViewController;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5524800C1F0E952E007C2D33 /* CopyFiles */ = {
@@ -51,6 +67,12 @@
 		552480031F0E7965007C2D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		552480051F0E7965007C2D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		552480091F0E7981007C2D33 /* ParallaxChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxChildViewController.swift; sourceTree = "<group>"; };
+		5524800E1F0F6440007C2D33 /* ParallaxPagingParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxPagingParentViewController.swift; sourceTree = "<group>"; };
+		5567279D1F1153D800307D5E /* ParallaxChildViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxChildViewController2.swift; sourceTree = "<group>"; };
+		558D62B41F0F68BE006BE6C8 /* Demo1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Demo1.storyboard; sourceTree = "<group>"; };
+		55D2F7BC1F116A6500EC282D /* Child3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Child3.storyboard; sourceTree = "<group>"; };
+		55D2F7BE1F11788400EC282D /* ChildViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChildViewController.storyboard; sourceTree = "<group>"; };
+		55D2F7C01F11788F00EC282D /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +139,15 @@
 			isa = PBXGroup;
 			children = (
 				55247FF91F0E7965007C2D33 /* AppDelegate.swift */,
+				5524800E1F0F6440007C2D33 /* ParallaxPagingParentViewController.swift */,
 				55247FFB1F0E7965007C2D33 /* ViewController.swift */,
 				552480091F0E7981007C2D33 /* ParallaxChildViewController.swift */,
+				5567279D1F1153D800307D5E /* ParallaxChildViewController2.swift */,
+				55D2F7C01F11788F00EC282D /* ChildViewController.swift */,
+				55D2F7BE1F11788400EC282D /* ChildViewController.storyboard */,
+				55D2F7BC1F116A6500EC282D /* Child3.storyboard */,
 				55247FFD1F0E7965007C2D33 /* Main.storyboard */,
+				558D62B41F0F68BE006BE6C8 /* Demo1.storyboard */,
 				552480001F0E7965007C2D33 /* Assets.xcassets */,
 				552480021F0E7965007C2D33 /* LaunchScreen.storyboard */,
 				552480051F0E7965007C2D33 /* Info.plist */,
@@ -171,6 +199,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				55ECBB291F117D1D00A0C90D /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -230,7 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D2F7BD1F116A6500EC282D /* Child3.storyboard in Resources */,
 				552480041F0E7965007C2D33 /* LaunchScreen.storyboard in Resources */,
+				55D2F7BF1F11788400EC282D /* ChildViewController.storyboard in Resources */,
+				558D62B51F0F68BE006BE6C8 /* Demo1.storyboard in Resources */,
 				552480011F0E7965007C2D33 /* Assets.xcassets in Resources */,
 				55247FFF1F0E7965007C2D33 /* Main.storyboard in Resources */,
 			);
@@ -256,11 +288,22 @@
 			files = (
 				55247FFC1F0E7965007C2D33 /* ViewController.swift in Sources */,
 				55247FFA1F0E7965007C2D33 /* AppDelegate.swift in Sources */,
+				5567279E1F1153D800307D5E /* ParallaxChildViewController2.swift in Sources */,
 				5524800A1F0E7981007C2D33 /* ParallaxChildViewController.swift in Sources */,
+				5524800F1F0F6440007C2D33 /* ParallaxPagingParentViewController.swift in Sources */,
+				55D2F7C11F11788F00EC282D /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55ECBB291F117D1D00A0C90D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55247F431F0CDA66007C2D33 /* ParallaxPagingViewController */;
+			targetProxy = 55ECBB281F117D1D00A0C90D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55247FFD1F0E7965007C2D33 /* Main.storyboard */ = {
@@ -478,6 +521,7 @@
 				552480081F0E7965007C2D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

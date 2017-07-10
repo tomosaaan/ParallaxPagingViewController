@@ -12,7 +12,6 @@
 		1C56CE917D2BC329C18AEA3ECFE2EE55 /* Pods-ParallaxPagingViewControllerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0648CC1B0879CE15592E6450BA2B3229 /* Pods-ParallaxPagingViewControllerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2885BC930F2A9980F8D8E15571A88F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		38EE4439D8CC3B74386D249858BB32A5 /* ParallaxPagingViewControllerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC30C7DE235C0907F2D37F16FADBAC /* ParallaxPagingViewControllerEnums.swift */; };
-		4DFBA366BFC4232BFE44BAA9366010D8 /* ParallaxPagingViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40392265D912A45676307DAF9DAE5C /* ParallaxPagingViewController+.swift */; };
 		645369920F52A67508BA80B8DDDEC2A3 /* ParallaxPagingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B03493EED8FFE26A60C123CB32070D /* ParallaxPagingViewController-dummy.m */; };
 		6E0DE7F6A841B31A3C2815C961830163 /* ParallaxPagingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7879056CD5EA6350286454A0015021FD /* ParallaxPagingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A90B16F49DD42A9C6043D5933CC7E533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -49,21 +48,20 @@
 		7B87AB0A56E0DC3DC792B449AB6FDEC7 /* Pods-ParallaxPagingViewControllerExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxPagingViewControllerExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		7C41392648AE8F755FE2F72C2526568B /* Pods-ParallaxPagingViewControllerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxPagingViewControllerExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F44C301CE37D255DCE900B49F9CEE4B /* ParallaxViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
-		8699EDCAABEB86DC376860CF8B548556 /* Pods_ParallaxPagingViewControllerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxPagingViewControllerExampleUITests.framework; path = "Pods-ParallaxPagingViewControllerExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8699EDCAABEB86DC376860CF8B548556 /* Pods_ParallaxPagingViewControllerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxPagingViewControllerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC27831B23A249976026E0C775B2F32 /* Pods-ParallaxPagingViewControllerExampleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxPagingViewControllerExampleUITests-resources.sh"; sourceTree = "<group>"; };
 		8F2E7CB2BC5C9FE4EE103ACD061D0937 /* Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		90DE8FADDABEB8DE68B73B0AB6F44082 /* Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxPagingViewControllerExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9578B1DB218DD41D71741957888161A5 /* ParallaxPagingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ParallaxPagingViewController.framework; path = ParallaxPagingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C40392265D912A45676307DAF9DAE5C /* ParallaxPagingViewController+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ParallaxPagingViewController+.swift"; sourceTree = "<group>"; };
-		A121CE6DCF6C920FE6BC48418992FFB7 /* ParallaxPagingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ParallaxPagingViewController.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9578B1DB218DD41D71741957888161A5 /* ParallaxPagingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxPagingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A121CE6DCF6C920FE6BC48418992FFB7 /* ParallaxPagingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ParallaxPagingViewController.modulemap; sourceTree = "<group>"; };
 		A77B0FD91C2571A3192003E686BC0739 /* Pods-ParallaxPagingViewControllerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxPagingViewControllerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B949828D128253C7E5F347262FBF3C83 /* Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF33739061732ECF7239F754314DC5C6 /* Pods-ParallaxPagingViewControllerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParallaxPagingViewControllerExample.modulemap"; sourceTree = "<group>"; };
-		C2B317D3A25A48B728E1CB7BC11F668A /* Pods-ParallaxPagingViewControllerExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParallaxPagingViewControllerExampleUITests.modulemap"; sourceTree = "<group>"; };
+		BF33739061732ECF7239F754314DC5C6 /* Pods-ParallaxPagingViewControllerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParallaxPagingViewControllerExample.modulemap"; sourceTree = "<group>"; };
+		C2B317D3A25A48B728E1CB7BC11F668A /* Pods-ParallaxPagingViewControllerExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParallaxPagingViewControllerExampleUITests.modulemap"; sourceTree = "<group>"; };
 		C4CBCD8A15D27EF4E52B13D7636F48F7 /* Pods-ParallaxPagingViewControllerExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParallaxPagingViewControllerExampleUITests-umbrella.h"; sourceTree = "<group>"; };
-		C96C0A2D42E0F03E1A4CDC3952898A5A /* Pods_ParallaxPagingViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxPagingViewControllerExample.framework; path = "Pods-ParallaxPagingViewControllerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96C0A2D42E0F03E1A4CDC3952898A5A /* Pods_ParallaxPagingViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxPagingViewControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE5A83C2CA741D56D02A0573173E78C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5DC30C7DE235C0907F2D37F16FADBAC /* ParallaxPagingViewControllerEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxPagingViewControllerEnums.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			children = (
 				9735AB6CE95E51202957A52E7E22A21C /* Sources */,
 			);
-			name = ParallaxPagingViewController;
 			path = ParallaxPagingViewController;
 			sourceTree = "<group>";
 		};
@@ -182,12 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				FE461DECB5C246235721DB027B37BA4C /* ParallaxPagingViewController.swift */,
-				9C40392265D912A45676307DAF9DAE5C /* ParallaxPagingViewController+.swift */,
 				E5DC30C7DE235C0907F2D37F16FADBAC /* ParallaxPagingViewControllerEnums.swift */,
 				3D27146D1D41921D08C5C9B714AF7518 /* ParallaxView.swift */,
 				7F44C301CE37D255DCE900B49F9CEE4B /* ParallaxViewController.swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -363,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFBA366BFC4232BFE44BAA9366010D8 /* ParallaxPagingViewController+.swift in Sources */,
 				645369920F52A67508BA80B8DDDEC2A3 /* ParallaxPagingViewController-dummy.m in Sources */,
 				E1A8603340E0603E8C96E43547F98D6C /* ParallaxPagingViewController.swift in Sources */,
 				38EE4439D8CC3B74386D249858BB32A5 /* ParallaxPagingViewControllerEnums.swift in Sources */,

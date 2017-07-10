@@ -15,13 +15,13 @@ public protocol ParallaxPagingViewControllerDelegate: class {
 
 open class ParallaxPagingViewController: UIViewController {
     
-    public weak var delegate: ParallaxPagingViewControllerDelegate? = nil
+    public weak var delegate: ParallaxPagingViewControllerDelegate?
     
     public let containerScrollView = UIScrollView()
     
-    fileprivate let controllers: [ParallaxViewController]
+    fileprivate var controllers: [ParallaxViewController]
     
-    public var visibleViewControllers = [ParallaxViewController]()
+    fileprivate(set) var visibleViewControllers = [ParallaxViewController]()
     
     fileprivate var scrollDirection: ScrollDirection {
         let controller = controllers[currentPageIndex]
@@ -50,7 +50,6 @@ open class ParallaxPagingViewController: UIViewController {
                 value = true
             }
         case .stop:
-            print("stop")
             value = true
         }
         return value
@@ -60,17 +59,26 @@ open class ParallaxPagingViewController: UIViewController {
         return isInfinity ? 5 : controllers.count
     }
     
-    fileprivate var pageOptions: [ParallaxPagingViewOption:Any]
-    
     fileprivate(set) var isInfinity = false
     
-    fileprivate(set) var orientation = UIDeviceOrientation.unknown
+    public var pageSpace: CGFloat = 0 {
+        didSet {
+            validateLayoutContents()
+        }
+    }
     
-    public var pageSpace: CGFloat = 20
     
-    public var parallaxSpace: CGFloat = 50
+    public var parallaxSpace: CGFloat = 0 {
+        didSet {
+            validateLayoutContents()
+        }
+    }
     
-    fileprivate(set) var currentPageIndex: Int = 0
+    public var currentPageIndex: Int = 0 {
+        didSet {
+            validateLayoutContents()
+        }
+    }
     
     fileprivate var afterPageIndex: Int {
         return currentPageIndex + 1 > controllers.count - 1 ? 0 : currentPageIndex + 1
@@ -80,13 +88,11 @@ open class ParallaxPagingViewController: UIViewController {
         return currentPageIndex - 1 < 0 ? controllers.count - 1 : currentPageIndex - 1
     }
     
-    public init(viewControllers: [ParallaxViewController],option: [ParallaxPagingViewOption:Any] = [:]) {
+    public init(_ viewControllers: [ParallaxViewController]) {
         controllers = viewControllers
-        pageOptions = option
         super.init(nibName: nil, bundle: nil)
-        setInfinite(true)
-        constructScrollView()
-        constructControllers()
+        setupScrollView()
+        setupViewControllers()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -95,92 +101,63 @@ open class ParallaxPagingViewController: UIViewController {
     
     override open func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        print(#function)
         
-        let currentOrientation = UIDevice.current.orientation
-        
-        guard currentOrientation != orientation else {
-            return
-        }
-        
-        containerScrollView.contentSize = CGSize(width: (view.bounds.width+pageSpace)*CGFloat(lazyViewControllersCount), height: view.bounds.height)
-        containerScrollView.frame = CGRect(x: -pageSpace/2, y: 0, width: view.bounds.width + pageSpace, height: view.bounds.height)
-        
-        let currentViewController = controllers[currentPageIndex]
-        relayoutViewController(currentViewController, position: .current)
+        containerScrollView.contentSize = CGSize(width: (view.bounds.width+pageSpace)*CGFloat(lazyViewControllersCount),
+                                                 height: containerScrollView.contentSize.height)
+        containerScrollView.frame = CGRect(x: -pageSpace/2, y:0 , width: view.bounds.width + pageSpace, height: view.bounds.height)
         
         var currentOffset: CGPoint {
             let currentViewControllerFrame = practicalFrame(for: .current)
             return CGPoint(x: currentViewControllerFrame.origin.x-pageSpace/2, y: currentViewControllerFrame.origin.y)
         }
         
-        resetVisibleControllersIfNeeded()
         containerScrollView.setContentOffset(currentOffset, animated: false)
-        orientation = currentOrientation
+        
+        layoutVisibleViewControllers()
     }
     
     public func setInfinite(_ enabled: Bool) {
-        let infiniteEnabled = enabled && controllers.count > 2
-        if !infiniteEnabled, !enabled {
+        if enabled && controllers.count < 3 {
             NSLog("infinite paging needs more than three controllers")
         }
-        isInfinity = infiniteEnabled
-        relayoutPageView()
+        isInfinity = enabled && controllers.count > 2
     }
     
-    fileprivate func constructScrollView() {
+    public func setViewControllers(controllers: [ParallaxViewController]) {
+        
+    }
+    
+    fileprivate func setupScrollView() {
         containerScrollView.showsVerticalScrollIndicator = false
         containerScrollView.showsHorizontalScrollIndicator = false
         containerScrollView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         containerScrollView.delegate = self
         containerScrollView.isPagingEnabled = true
+        automaticallyAdjustsScrollViewInsets = false
         view.addSubview(containerScrollView)
     }
     
-    fileprivate func constructControllers() {
+    fileprivate func setupViewControllers() {
         let currentViewController = controllers[currentPageIndex]
         visibleViewControllers = [currentViewController]
     }
     
     fileprivate func showViewController(_ viewController: ParallaxViewController, position: PagePosition) {
         addChildViewController(viewController)
-        relayoutViewController(viewController, position: position)
+        layoutViewController(viewController, position: position)
         containerScrollView.addSubview(viewController.view)
         viewController.willMove(toParentViewController: self)
     }
     
     fileprivate func hideViewController(_ viewController: ParallaxViewController) {
+        guard !isCurrent(viewController) else {
+            return
+        }
         viewController.willMove(toParentViewController: nil)
         viewController.view.removeFromSuperview()
         viewController.removeFromParentViewController()
     }
     
-    fileprivate func relayoutViewController(_ viewController: ParallaxViewController, position: PagePosition) {
-        if !isChild(viewController) {
-            showViewController(viewController, position: position)
-        } else {
-            viewController.view.frame = frame(at: position)
-        }
-    }
-    
-    fileprivate func resetVisibleControllersIfNeeded() {
-        guard visibleViewControllers.count >= 2 || pagingEnabled else {
-            return
-        }
-        for controller in visibleViewControllers {
-            if isCurrent(controller) {
-                continue
-            }
-            hideViewController(controller)
-            let _ = visibleViewControllers.index(of: controller).flatMap{ visibleViewControllers.remove(at: $0)}
-        }
-    }
-    
-    func relayoutPageView() {
-        view.setNeedsLayout()
-        view.layoutIfNeeded()
-    }
-
 }
 
 // MARK: UIScrollViewDelegate
@@ -196,13 +173,6 @@ extension ParallaxPagingViewController: UIScrollViewDelegate {
             case .stop:
                 scrollViewDidSrollTo(.current)
             }
-        }
-    }
-    
-    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print(#function)
-        if scrollView.isEqual(containerScrollView) {
-            resetVisibleControllersIfNeeded()
         }
     }
     
@@ -227,16 +197,17 @@ extension ParallaxPagingViewController {
         
         if pagingEnabled, let nextViewController = nextViewController {
             if !isVisible(nextViewController) && !isChild(nextViewController) {
-                willMoveTo(nextViewController, position: position)
+                willMove(to: nextViewController, from: currentViewController, position: position)
             } else if didEndDisplay {
-                didMoveTo(currentViewController, position: position)
+                didMove(to: nextViewController, from: currentViewController, position: position)
             }
         } else {
             if visibleViewControllers.count > 1 && position == .current {
-                didMoveTo(currentViewController, position: position)
+                didMove(to: currentViewController, from: currentViewController, position: position)
             }
         }
         
+        // for parallax animation
         var scrollRate: CGFloat {
             let rect = currentViewController.view.convert(currentViewController.view.bounds, to: containerScrollView)
             return (rect.origin.x - containerScrollView.contentOffset.x - pageSpace/2) / containerScrollView.frame.width
@@ -253,35 +224,68 @@ extension ParallaxPagingViewController {
         }
     }
     
-    func willMoveTo(_ viewController: ParallaxViewController, position: PagePosition) {
-        showViewController(viewController, position: position)
-        visibleViewControllers.append(viewController)
-        delegate?.parallaxPagingView(self, willMoveTo: viewController)
-    }
-    
-    func didMoveTo(_ viewController: ParallaxViewController, position: PagePosition) {
-        updateCurrentIndex(to: position)
-        resetVisibleControllersIfNeeded()
-        if isInfinity {
-            relayoutViewController(controllers[currentPageIndex], position: .current)
-            scrollToCurrent(from: position)
+    func willMove(to viewController: ParallaxViewController?, from previousViewController: ParallaxViewController, position: PagePosition) {
+        if let viewController = viewController {
+            showViewController(viewController, position: position)
+            visibleViewControllers.append(viewController)
+            delegate?.parallaxPagingView(self, willMoveTo: viewController)
         }
-        delegate?.parallaxPagingView(self, didMoveTo: viewController)
     }
     
-    func updateCurrentIndex(to position: PagePosition) {
+    func didMove(to viewController: ParallaxViewController?,from previousViewController: ParallaxViewController, position: PagePosition) {
+        hideViewController(previousViewController)
+        if let viewController = viewController {
+            let _ = visibleViewControllers.index(of: viewController).flatMap{ visibleViewControllers.remove(at: $0)}
+            updateCurrentIndex(position)
+            if isInfinity {
+                layoutViewController(controllers[currentPageIndex], position: .current)
+                scrollToCurrent(from: position)
+            }
+            delegate?.parallaxPagingView(self, didMoveTo: viewController)
+        }
+    }
+    
+    func updateCurrentIndex(_ position: PagePosition) {
         if case .after = position {
             currentPageIndex = afterPageIndex
         } else if case .before = position {
             currentPageIndex = beforePageIndex
         }
     }
-    
 }
 
 // MARK: methods for layout
 
 extension ParallaxPagingViewController {
+    
+    func validateLayoutContents() {
+        let currentViewController = controllers[currentPageIndex]
+        visibleViewControllers = [currentViewController]
+        
+        if view.frame.width + pageSpace < parallaxSpace {
+            parallaxSpace = view.frame.width + pageSpace
+        }
+    }
+    
+    fileprivate func layoutViewController(_ viewController: ParallaxViewController, position: PagePosition) {
+        if isChild(viewController) {
+            viewController.view.frame = frame(at: position)
+        } else {
+            showViewController(viewController, position: position)
+        }
+    }
+    
+    fileprivate func layoutVisibleViewControllers() {
+        for controller in visibleViewControllers {
+            var position = PagePosition.current
+            if isBefore(controller) {
+                position = .before
+            } else if isAfter(controller) {
+                position = .after
+            }
+            showViewController(controller, position: position)
+        }
+    }
     
     func practicalFrame(for position: PagePosition) -> CGRect {
         var viewController: ParallaxViewController {

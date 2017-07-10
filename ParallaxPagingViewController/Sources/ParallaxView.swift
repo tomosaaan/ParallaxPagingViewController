@@ -16,8 +16,8 @@ open class ParallaxView: UIView {
     
     @IBInspectable
     public var backgroundImage: UIImage? {
-        willSet {
-            backgroundImageView.image = newValue
+        didSet {
+            backgroundImageView.image = backgroundImage
         }
     }
     

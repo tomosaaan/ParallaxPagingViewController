@@ -187,6 +187,7 @@
 				TargetAttributes = {
 					55247FCD1F0E74EC007C2D33 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KYVZ4HHZ5P;
 						ProvisioningStyle = Automatic;
 					};
 					55247FE11F0E74ED007C2D33 = {
@@ -473,7 +474,9 @@
 			baseConfigurationReference = E91074AFC5CEC0E2F708E188 /* Pods-ParallaxPagingViewControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KYVZ4HHZ5P;
 				INFOPLIST_FILE = ParallaxPagingViewControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.ParallaxPagingViewControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,7 +489,9 @@
 			baseConfigurationReference = E62F3C984D6808937A214069 /* Pods-ParallaxPagingViewControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KYVZ4HHZ5P;
 				INFOPLIST_FILE = ParallaxPagingViewControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.ParallaxPagingViewControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
