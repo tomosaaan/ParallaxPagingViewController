@@ -1,5 +1,6 @@
 # ParallaxPagingViewController
 ## Demo
+<img src="DocumentContents/Demo.gif" width="200">
 
 ## Usage
 ### import 
