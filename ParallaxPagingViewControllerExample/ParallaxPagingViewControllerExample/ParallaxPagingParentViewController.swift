@@ -13,8 +13,26 @@ class ParallaxPagingParentViewController: ParallaxPagingViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pageSpace = 20
+        parallaxSpace = 50
+        
+        setViewControllers(controllers: [
+            ParallaxChildViewController(),
+            ParallaxChildViewController(),
+            ParallaxChildViewController(),
+        ])
+        
         setInfinite(true)
     }
 
+}
+extension ParallaxPagingParentViewController: ParallaxPagingViewControllerDelegate{
+    func parallaxPagingView(_ pagingViewController: ParallaxPagingViewController, willMoveTo viewController: ParallaxViewController) {
+    }
+    
+    func parallaxPagingView(_ pagingViewController: ParallaxPagingViewController, didMoveTo viewController: ParallaxViewController) {
+        
+    }
+    
 }
 

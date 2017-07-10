@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		1DD511AFD5EB648537509A79 /* Pods_ParallaxPagingViewControllerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722DEE2E491454946E4885B2 /* Pods_ParallaxPagingViewControllerExample.framework */; };
 		55247FD21F0E74EC007C2D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FD11F0E74EC007C2D33 /* AppDelegate.swift */; };
-		55247FD41F0E74EC007C2D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FD31F0E74EC007C2D33 /* ViewController.swift */; };
+		55247FD41F0E74EC007C2D33 /* ParallaxPagingParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FD31F0E74EC007C2D33 /* ParallaxPagingParentViewController.swift */; };
 		55247FD71F0E74EC007C2D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55247FD51F0E74EC007C2D33 /* Main.storyboard */; };
 		55247FD91F0E74EC007C2D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55247FD81F0E74EC007C2D33 /* Assets.xcassets */; };
 		55247FDC1F0E74EC007C2D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55247FDA1F0E74EC007C2D33 /* LaunchScreen.storyboard */; };
 		55247FE71F0E74ED007C2D33 /* ParallaxPagingViewControllerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FE61F0E74ED007C2D33 /* ParallaxPagingViewControllerExampleUITests.swift */; };
 		55247FF21F0E78BF007C2D33 /* ParallaxChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55247FF11F0E78BF007C2D33 /* ParallaxChildViewController.swift */; };
+		55B941111F13730500ED6902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B941101F13730500ED6902 /* ViewController.swift */; };
 		809FA4FE0EBB91E44885015F /* Pods_ParallaxPagingViewControllerExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFF2FD6749D4AA4B1E953AC /* Pods_ParallaxPagingViewControllerExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +32,7 @@
 /* Begin PBXFileReference section */
 		55247FCE1F0E74EC007C2D33 /* ParallaxPagingViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxPagingViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55247FD11F0E74EC007C2D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55247FD31F0E74EC007C2D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55247FD31F0E74EC007C2D33 /* ParallaxPagingParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxPagingParentViewController.swift; sourceTree = "<group>"; };
 		55247FD61F0E74EC007C2D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55247FD81F0E74EC007C2D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55247FDB1F0E74EC007C2D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		55247FE61F0E74ED007C2D33 /* ParallaxPagingViewControllerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxPagingViewControllerExampleUITests.swift; sourceTree = "<group>"; };
 		55247FE81F0E74ED007C2D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55247FF11F0E78BF007C2D33 /* ParallaxChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxChildViewController.swift; sourceTree = "<group>"; };
+		55B941101F13730500ED6902 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		722DEE2E491454946E4885B2 /* Pods_ParallaxPagingViewControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxPagingViewControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CA95A0D0EB14C76DA47999 /* Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallaxPagingViewControllerExampleUITests/Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EFF2FD6749D4AA4B1E953AC /* Pods_ParallaxPagingViewControllerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxPagingViewControllerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				55247FD11F0E74EC007C2D33 /* AppDelegate.swift */,
-				55247FD31F0E74EC007C2D33 /* ViewController.swift */,
+				55B941101F13730500ED6902 /* ViewController.swift */,
+				55247FD31F0E74EC007C2D33 /* ParallaxPagingParentViewController.swift */,
 				55247FF11F0E78BF007C2D33 /* ParallaxChildViewController.swift */,
 				55247FD51F0E74EC007C2D33 /* Main.storyboard */,
 				55247FD81F0E74EC007C2D33 /* Assets.xcassets */,
@@ -334,8 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55247FD41F0E74EC007C2D33 /* ViewController.swift in Sources */,
+				55247FD41F0E74EC007C2D33 /* ParallaxPagingParentViewController.swift in Sources */,
 				55247FD21F0E74EC007C2D33 /* AppDelegate.swift in Sources */,
+				55B941111F13730500ED6902 /* ViewController.swift in Sources */,
 				55247FF21F0E78BF007C2D33 /* ParallaxChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
