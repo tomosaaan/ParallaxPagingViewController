@@ -1,6 +1,8 @@
 
 <img src="DocumentContents/top.png" width="700">
 
+[![Build Status](https://travis-ci.org/tomokitakahashi/ParallaxPagingViewController.svg?branch=master)](https://travis-ci.org/tomokitakahashi/ParallaxPagingViewController)
+
 ## Demo
 <img src="DocumentContents/Demo.gif" width="200">
 
