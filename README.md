@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/tomokitakahashi/ParallaxPagingViewController.svg?branch=master)](https://travis-ci.org/tomokitakahashi/ParallaxPagingViewController)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
 
 ## Demo
 <img src="DocumentContents/Demo.gif" width="200">
