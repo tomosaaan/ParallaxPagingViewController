@@ -508,10 +508,12 @@
 			baseConfigurationReference = 83CA95A0D0EB14C76DA47999 /* Pods-ParallaxPagingViewControllerExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/ParallaxPagingViewController\"";
 				INFOPLIST_FILE = ParallaxPagingViewControllerExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.ParallaxPagingViewControllerExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.2;
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ParallaxPagingViewControllerExample;
 			};
@@ -522,10 +524,12 @@
 			baseConfigurationReference = A60A58277F05A2ADDA558C9E /* Pods-ParallaxPagingViewControllerExampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/ParallaxPagingViewController\"";
 				INFOPLIST_FILE = ParallaxPagingViewControllerExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomo.ParallaxPagingViewControllerExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.2;
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ParallaxPagingViewControllerExample;
 			};
