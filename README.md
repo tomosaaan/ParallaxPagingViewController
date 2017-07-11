@@ -7,6 +7,8 @@
 )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
+[![Issues](https://img.shields.io/github/issues/tomokitakahashi/ParallaxPagingViewController.svg?style=flat
+)](https://github.com/tomokitakahashi/ParallaxPagingViewController/issues?state=open)
 
 ## Demo
 <img src="DocumentContents/Demo.gif" width="200">
