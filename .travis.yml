@@ -1,6 +1,8 @@
 language: objective-c
 
-osx_image: xcode8
+osx_image: xcode8.2
+
+podfile: ParallaxPagingViewControllerExample/Podfile
 
 script:
 - set -o pipefail
