@@ -8,34 +8,37 @@
 
 import UIKit
 
-
 @IBDesignable
 open class ParallaxView: UIView {
 
-    public let backgroundImageView = UIImageView()
+    open let backgroundImageView = UIImageView()
     
     @IBInspectable
-    public var backgroundImage: UIImage? {
+    open var parallaxImage: UIImage? {
         didSet {
-            backgroundImageView.image = backgroundImage
+            backgroundImageView.image = parallaxImage
         }
     }
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        initiarize()
+        initialize()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initiarize()
+        initialize()
     }
     
-    fileprivate func initiarize() {
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        backgroundImageView.frame = bounds
+    }
+    
+    fileprivate func initialize() {
         clipsToBounds = true
         autoresizingMask = [.flexibleWidth,.flexibleHeight]
         backgroundImageView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-        backgroundImageView.frame = bounds
         addSubview(backgroundImageView)
     }
     

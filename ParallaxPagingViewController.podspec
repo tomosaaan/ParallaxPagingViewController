@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "ParallaxPagingViewController"
-  s.version      = "0.0.2"
+  s.version      = "0.8.0"
   s.homepage     = "https://github.com/tomokitakahashi/ParallaxPagingViewController"
   s.summary      = "ParallaxPagingViewController is paging library with parallax animation"
   s.license      = "MIT"

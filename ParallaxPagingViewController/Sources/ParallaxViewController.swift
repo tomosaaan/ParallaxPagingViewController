@@ -8,26 +8,24 @@
 
 import UIKit
 
-
 open class ParallaxViewController: UIViewController {
     
-    public var backgroundView = ParallaxView()
+    open var backgroundView = ParallaxView()
     
     @IBInspectable
-    public var image: UIImage? {
+    open var parallaxImage: UIImage? {
         didSet {
-            backgroundView.backgroundImage = image!
+            backgroundView.parallaxImage = parallaxImage
         }
     }
     
-    override open func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         backgroundView.frame = view.bounds
         view.addSubview(backgroundView)
         
-    }
-
-    public func setParallaxImage(_ image: UIImage) {
-        backgroundView.backgroundImage = image
+        // For xib & storyboard
+        view.sendSubview(toBack: backgroundView)
+        view.subviews.forEach{ $0.bringSubview(toFront: backgroundView) }
     }
 }
