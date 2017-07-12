@@ -65,7 +65,11 @@ var currentPageIndex: Int   // first page view index
 - function
 
 ```swift
-func setInfinite(_ enabled: Bool) // set infinite paging enabled
+func setInfinite(_ enabled: Bool) // set infinite paging enabled 
+/*
+ [important]
+ infinite scroll needs more than three viewControllers
+*/
 ```
 
 ```swift
