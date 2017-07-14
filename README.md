@@ -94,8 +94,11 @@ optional func parallaxPagingView(_ pagingViewController: ParallaxPagingViewContr
 ## installation
 [CocoaPods](https://cocoapods.org/)
 1. insert to `Podfile` 
+
 `pod 'ParallaxPagingViewController', '~> 0.8.0'`
+
 2. run 
+
 `pod install`
 
 ## LICENSE
