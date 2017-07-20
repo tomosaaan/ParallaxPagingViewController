@@ -19,8 +19,3 @@ enum PagePosition {
     case after
     case before
 }
-
-public enum ParallaxPagingViewOption: String {
-    case pageSpace
-    case parallaxSpace
-}

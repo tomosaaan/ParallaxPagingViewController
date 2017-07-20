@@ -14,7 +14,7 @@ class ParallaxPagingParentViewController: ParallaxPagingViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pageSpace = 20
-        parallaxSpace = 50
+        parallaxSpace = 120
         
         setViewControllers(controllers: [
             ParallaxChildViewController(),
