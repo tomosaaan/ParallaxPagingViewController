@@ -83,8 +83,6 @@ open class ParallaxPagingViewController: UIViewController {
         return isInfinity ? 5 : controllers.count
     }
     
-    fileprivate var needsDisplay = true
-    
     fileprivate var afterPageIndex: Int {
         return currentPageIndex + 1 > controllers.count - 1 ? 0 : currentPageIndex + 1
     }
